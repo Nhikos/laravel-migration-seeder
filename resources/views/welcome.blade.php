@@ -10,10 +10,10 @@
 <body>
     @foreach ($travels as $travel)
         <div>
-            <h2>{{ $travel["location"] }}</h2>
-            <h3>{{ $travel["state"] }}</h3>
-            <h4>{{ $travel["date"] }}</h4>
-            <h4>{{ $travel["price"] }}</h4>
+            <h2><span>Location: </span>{{ $travel["location"] }}</h2>
+            <h3><span>State: </span>{{ $travel["state"] }}</h3>
+            <h4><span>Date: </span>{{ $travel["date"] }}</h4>
+            <h4><span>Price: </span> {{ $travel["price"] }}€</h4>
         </div>
         @endforeach
 </body>
